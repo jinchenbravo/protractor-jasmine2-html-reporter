@@ -1,4 +1,4 @@
-# protractor-jasmine2-html-reporter
+# wordwrap-protractor-jasmine2-html-reporter
 
 [![npm version](https://badge.fury.io/js/wordwrap-protractor-jasmine2-html-reporter.svg)](http://badge.fury.io/js/wordwrap-protractor-jasmine2-html-reporter)
 
@@ -9,14 +9,14 @@ HTML reporter for Jasmine2 and Protractor that will include screenshots of each 
 
 ## Usage
 
-The `protractor-jasmine2-html-reporter` is available via npm:
+The `wordwrap-protractor-jasmine2-html-reporter` is available via npm:
 
-`$ npm install protractor-jasmine2-html-reporter --save-dev`
+`$ npm install wordwrap-protractor-jasmine2-html-reporter --save-dev`
 
 In your Protractor configuration file, register protractor-jasmine2-html-reporter in jasmine:
 
 ```
-var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+var Jasmine2HtmlReporter = require('wordwrap-protractor-jasmine2-html-reporter');
 
 exports.config = {
    // ...

@@ -1,6 +1,6 @@
 {
   "name": "wordwrap-protractor-jasmine2-html-reporter",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "HTML reporter for Jasmine2 and Protractor",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "author": "Alejandro Asensio <alejandro@kenzilab.com> (http://www.kenzilab.com/)",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/Kenzitron/protractor-jasmine2-html-reporter/issues"
+    "url": "https://github.com/jinchenbravo/protractor-jasmine2-html-reporter/issues"
   },
   "dependencies": {
     "hat": "0.0.3",

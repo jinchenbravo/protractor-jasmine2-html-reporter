@@ -1,6 +1,6 @@
 {
-  "name": "protractor-jasmine2-html-reporter",
-  "version": "0.0.6",
+  "name": "wordwrap-protractor-jasmine2-html-reporter",
+  "version": "0.0.8",
   "description": "HTML reporter for Jasmine2 and Protractor",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kenzitron/protractor-jasmine2-html-reporter"
+    "url": "https://github.com/jinchenbravo/protractor-jasmine2-html-reporter"
   },
   "keywords": [
     "jasmine2",

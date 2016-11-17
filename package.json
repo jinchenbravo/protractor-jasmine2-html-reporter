@@ -1,6 +1,6 @@
 {
   "name": "wordwrap-protractor-jasmine2-html-reporter",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "HTML reporter for Jasmine2 and Protractor",
   "main": "index.js",
   "scripts": {

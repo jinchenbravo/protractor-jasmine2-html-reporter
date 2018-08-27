@@ -109,6 +109,7 @@ function Jasmine2HTMLReporter(options) {
   self.consolidateAll = self.consolidate !== false && (options.consolidateAll === UNDEFINED ? true : options.consolidateAll);
   self.filePrefix = options.filePrefix || (self.consolidateAll ? 'htmlReport' : 'htmlReport-');
   self.cleanDestination = options.cleanDestination === UNDEFINED ? true : options.cleanDestination;
+  self.host = options.host === UNDEFINED ? '' : options.host;
 
   var suites = [],
     currentSuite = null,
@@ -234,7 +235,7 @@ function Jasmine2HTMLReporter(options) {
       totalSpecsExecuted +
       '</li><li>Total Failed Specs: ' +
       totalFailed +
-      '</li></ul>';
+      `</li><li>Host: ${self.host}</li></ul>`;
     //var output = '';
     for (var i = 0; i < suites.length; i++) {
       output += self.getOrWriteNestedOutput(suites[i]);

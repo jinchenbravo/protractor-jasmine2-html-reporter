@@ -114,6 +114,7 @@ function Jasmine2HTMLReporter(options) {
   var suites = [],
     currentSuite = null,
     totalSpecsExecuted = 0,
+    totalSpecsFailed = 0,
     totalSpecsDefined,
     // when use use fit, jasmine never calls suiteStarted / suiteDone, so make a fake one to use
     fakeFocusedSuite = {
@@ -182,6 +183,7 @@ function Jasmine2HTMLReporter(options) {
     }
     if (isFailed(spec)) {
       spec._suite._failures++;
+      totalSpecsFailed++;
     }
     totalSpecsExecuted++;
 
@@ -227,16 +229,8 @@ function Jasmine2HTMLReporter(options) {
       // focused spec (fit) -- suiteDone was never called
       self.suiteDone(fakeFocusedSuite);
     }
-    var totalFailed = 0;
-    for (var i = 0; i < suites.length; i++) {
-      totalFailed = suites[i]._failures + totalFailed;
-    }
-    var output = '<h1>Summary</h1><ul><li>Total Specs Executed: ' +
-      totalSpecsExecuted +
-      '</li><li>Total Failed Specs: ' +
-      totalFailed +
-      `</li><li>Host: ${self.host}</li></ul>`;
-    //var output = '';
+
+    var output = `<h1>Summary</h1><ul><li>Total Specs Executed: ${totalSpecsExecuted}</li><li>Total Failed Specs: ${totalSpecsFailed}</li><li>Host: ${self.host}</li></ul>`;
     for (var i = 0; i < suites.length; i++) {
       output += self.getOrWriteNestedOutput(suites[i]);
     }
